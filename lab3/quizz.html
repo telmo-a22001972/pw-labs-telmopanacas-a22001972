@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Porto</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Telmo Panaças">
+    <meta name="keywords" content="porto, Porto, Dragão, Francesinha, Ponte Luís I">
+    <meta name="description" content="Website sobre Porto">
+    <link rel="shortcut icon" href="images/francesinha.ico">
+    <style>
+        .poema , .autor_poema{
+            text-align: center;
+            padding-left: 35%;
+            padding-right: 25%;
+            width: 25%;
+        }
+    </style>
+</head>
+<body style="background-color: #e3967d">
+
+    <header>
+        <section>
+            <h1>Quizz</h1>
+            <figure>
+                <img src="images/porto_noite_300px.png" alt="Porto a noite">
+            </figure>
+        </section>
+    </header>
+
+
+    <nav>
+        <p>
+            <a href="index.html">Introdução |</a> <a href="local.html"> Localização |</a>
+            <a href="multimedia.html"> Multimédia |</a> <a href="info.html"> Informações |</a>
+            <a href="quizz.html"> Quizz |</a> <a href="../index.html"> Home</a>
+        </p>
+    </nav>
+
+    <main>
+        <br>
+        <section>
+            <h3>Quizz</h3>
+            <p>Nesta página será feito um quizz para testar se conhece bem a cidade do Porto.</p>
+        </section>
+        <br>
+        <section>
+            <form action="">
+                <fieldset>
+                    <legend>Teste os seus conhecimentos sobre a cidade do Porto</legend>
+                    <fieldset>
+                        <legend>Info</legend>
+                        <p>Nome <input type="text" name="nome" placeholder="ex: Pedro"></p>
+                        <p>Apelido <input type="text" name="apelido" placeholder="ex: Amarildo"></p>
+                        <p>Email <input type="email" name="email" placeholder="ex: pedroamarildo2006@gmail.com"></p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Perguntas</legend>
+                        <p>Nome da cidade <input type="text" name="nome da cidade"></p>
+                        <p>
+                            Qual o santo popular mais festejado no Porto?
+                            <br>
+                            <input type="radio" name="santo_popular" value="Santo António" id="santo antonio">
+                            <label for="santo antonio">Santo António</label>
+                            <input type="radio" name="santo_popular" value="São João" id="sao joao">
+                            <label for="sao joao">São João</label>
+                            <input type="radio" name="santo_popular" value="São Gonçalo" id="sao gonçalo">
+                            <label for="sao gonçalo">São Gonçalo</label>
+                            <input type="radio" name="santo_popular" value="São Pedro" id="sao pedro">
+                            <label for="sao pedro">São Pedro</label>
+                        </p>
+                        <br>
+                        <section>
+                            <p>
+                                Em que rua da cidade fica o emblemático Café Majestic?
+                                <!-Rua de Santa Catarina ->
+                                <br>
+                                <input type="radio" name="rua_cafe" value="Avenida de França" id="avenida_de_franca">
+                                <label for="avenida_de_franca">Avenida de França</label>
+                                <input type="radio" name="rua_cafe" value="Rua de Fernão de Magalhães" id="rua_fernao_magalhaes">
+                                <label for="rua_fernao_magalhaes">Rua de Fernão de Magalhães</label>
+                                <input type="radio" name="rua_cafe" value="Rua de Santa Catarina" id="rua_santa_catarina">
+                                <label for="rua_santa_catarina">Rua de Santa Catarina</label>
+                                <input type="radio" name="rua_cafe" value="Rua de Sá da Bandeira" id="rua_sa_bandeira">
+                                <label for="rua_sa_bandeira">Rua de Sá da Bandeira</label>
+                            </p>
+                        </section>
+                        <br>
+                        <section>
+                            <p>
+                                Em que ano o Centro Histórico da Cidade foi considerado "Património da Humnidade" pela UNESCO?
+                                <input type="number" name="ano_patrimonio_unesco" id="ano_patrimonio_unesco" max="2022" min="1945">
+                                <label for="ano_patrimonio_unesco"></label>
+                            </p>
+                        </section>
+                        <br>
+                        <section>
+                            <label for="jardim_fundacao_serralves">Quem encomendou o projeto do jardim da Fundação Serralves?</label>
+                            <input list="nomes" name="nomes" id="jardim_fundacao_serralves">
+                            <datalist id="nomes">
+                                <option value="Conde de Vizela"></option>
+                                <option value="Marques da Silva"></option>
+                                <option value="Marquês de Pombal"></option>
+                                <option value="D. João VI"></option>
+                            </datalist>
+                        </section>
+                        <br>
+                        <br>
+                        <section>
+                            <label for="local_galerias_arte">Onde podemos visitar as principais galerias de arte? </label>
+                            <select name="local_galerias_arte" id="local_galerias_arte">
+                                <option value="galeria de paris">Galeria de Paris</option>
+                                <option value="cordoaria">Cordoaria</option>
+                                <option value="miguel bombarda">Miguel Bombarda</option>
+                                <option value="cedofeita">Cedofeita</option>
+                            </select>
+                        </section>
+                    </fieldset>
+                </fieldset>
+            </form>
+
+        </section>
+    </main>
+
+
+
+
+
+
+    <footer>
+        <p>Telmo Panaças - a22001972 - LEI - 2º Ano - Universidade Lusófona de Humanidades e Tecnologias </p>
+    </footer>
+</body>
+</html>
