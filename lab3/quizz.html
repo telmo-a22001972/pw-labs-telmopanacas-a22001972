@@ -7,16 +7,8 @@
     <meta name="keywords" content="porto, Porto, Dragão, Francesinha, Ponte Luís I">
     <meta name="description" content="Website sobre Porto">
     <link rel="shortcut icon" href="images/francesinha.ico">
-    <style>
-        .poema , .autor_poema{
-            text-align: center;
-            padding-left: 35%;
-            padding-right: 25%;
-            width: 25%;
-        }
-    </style>
 </head>
-<body style="background-color: #e3967d">
+<body style="background-color: #EEEDDE">
 
     <header>
         <section>
@@ -44,19 +36,20 @@
         </section>
         <br>
         <section>
-            <form action="">
+            <form method="post" action="mailto: a22001972@alunos.ulht.pt" enctype="multipart/form-data">>
                 <fieldset>
                     <legend>Teste os seus conhecimentos sobre a cidade do Porto</legend>
                     <fieldset>
                         <legend>Info</legend>
-                        <p>Nome <input type="text" name="nome" placeholder="ex: Pedro"></p>
-                        <p>Apelido <input type="text" name="apelido" placeholder="ex: Amarildo"></p>
-                        <p>Email <input type="email" name="email" placeholder="ex: pedroamarildo2006@gmail.com"></p>
+                        <p>Nome <input type="text" name="nome" placeholder="ex: Pedro" required></p>
+                        <p>Apelido <input type="text" name="apelido" placeholder="ex: Amarildo" required></p>
+                        <p>Email <input type="email" name="email" placeholder="ex: pedroamarildo2006@gmail.com" required></p>
                     </fieldset>
 
                     <fieldset>
                         <legend>Perguntas</legend>
                         <p>Nome da cidade <input type="text" name="nome da cidade"></p>
+                        <br>
                         <p>
                             Qual o santo popular mais festejado no Porto?
                             <br>
@@ -94,6 +87,7 @@
                             </p>
                         </section>
                         <br>
+                        <br>
                         <section>
                             <label for="jardim_fundacao_serralves">Quem encomendou o projeto do jardim da Fundação Serralves?</label>
                             <input list="nomes" name="nomes" id="jardim_fundacao_serralves">
@@ -106,6 +100,7 @@
                         </section>
                         <br>
                         <br>
+                        <br>
                         <section>
                             <label for="local_galerias_arte">Onde podemos visitar as principais galerias de arte? </label>
                             <select name="local_galerias_arte" id="local_galerias_arte">
@@ -115,6 +110,112 @@
                                 <option value="cedofeita">Cedofeita</option>
                             </select>
                         </section>
+                        <br>
+                        <br>
+                        <br>
+                        <section>
+                            Em que ano começou a funcionar(por completo) a Ponte D. Luis I?
+                            <br>
+                            <input type="checkbox" name="ano_ponte_d_luis" value="1890" id="1890">
+                            <label for="1890">1890</label>
+                            <input type="checkbox" name="ano_ponte_d_luis" value="1890" id="1884">
+                            <label for="1884">1884</label>
+                            <input type="checkbox" name="ano_ponte_d_luis" value="1890" id="1888">
+                            <label for="1888">1888</label>
+                            <input type="checkbox" name="ano_ponte_d_luis" value="1890" id="1886">
+                            <label for="1886">1886</label>
+                        </section>
+                        <br>
+                        <br>
+                        <br>
+                        <section>
+                            <label for="nome_barco">Qual o nome do barco que antigamente transportava as pipas do Vinho do Porto
+                            pelo Rio Douro?</label>
+                            <ul>
+                                <li>Barco Moliceiro</li>
+                                <li>Barco Rabelo</li>
+                                <li>Barco Ribeirinha</li>
+                                <li>Barco do Douro</li>
+                            </ul>
+                            <input type="text" name="nome_barco" id="nome_barco" placeholder="ex: Barco Moliceiro" >
+                        </section>
+                        <br>
+                        <br>
+                        <br>
+                        <section>
+                            Em que zona fica a Casa da Música?
+                            <br>
+                            <input type="radio" name="zona_casa_musica" value="Praça da República" id="praca_republica">
+                            <label for="praca_republica">Praça da República</label>
+                            <input type="radio" name="zona_casa_musica" value="Boavista" id="boavista">
+                            <label for="boavista">Boavista</label>
+                            <input type="radio" name="zona_casa_musica" value="Avenida dos Aliados" id="avenida_aliados">
+                            <label for="avenida_aliados">Avenida dos Aliados</label>
+                            <input type="radio" name="zona_casa_musica" value="Cordoaria" id="cordoaria">
+                            <label for="cordoaria">Cordoaria</label>
+                        </section>
+                        <br>
+                        <br>
+                        <br>
+                        <section>
+                            <label for="rio_porto_vila_nova_gaia">Qual o rio que separa o Porto de Vila Nova de Gaia?</label>
+                            <select name="rio_porto_vila_nova_gaia" id="rio_porto_vila_nova_gaia">
+                                <option value="Rio Vouga">Rio Vouga</option>
+                                <option value="Rio Lima">Rio Lima</option>
+                                <option value="Rio Tejo">Rio Tejo</option>
+                                <option value="Rio Douro">Rio Douro</option>
+                            </select>
+                        </section>
+                        <br>
+                        <br>
+                        <br>
+                        <section>
+                            <label for="zona_biblioteca_almeida_garret">Onde fica a Biblioteca Municipal Almeida Garret?</label>
+                            <input list="zonas" name="zonas" id="zona_biblioteca_almeida_garret">
+                            <datalist id="zonas">
+                                <option value="Rua de Santa Catarina"></option>
+                                <option value="Praça do Marquês"></option>
+                                <option value="Jardins do Palácio de Cristal"></option>
+                                <option value="Rua do Almada"></option>
+                            </datalist>
+                        </section>
+                        <br>
+                        <br>
+                        <br>
+                        <section>
+                            <label for="prato_tipico">Qual é o prato típico da cidade do Porto?</label>
+                            <input type="text" name="prato_tipico" id="prato_tipico">
+                        </section>
+                        <br>
+                        <br>
+                        <br>
+                        <section>
+                                <label for="nome_estadio">Qual o nome do estádio do Futebol Clube do Porto?</label>
+                            <input type="text" name="nome_estadio" id="nome_estadio">
+                        </section>
+                        <br>
+                        <br>
+                        <br>
+                        <section>
+                            <label for="zona_livraria_lello">Onde fica a Livraria Lello?</label>
+                            <ul>
+                                <li>Rua das Cermelitas</li>
+                                <li>Avenida dos Aliados</li>
+                                <li>Rua de Cedofeita</li>
+                                <li>Rua de Santa Catarina</li>
+                            </ul>
+                            <input type="text" name="zona_livraria_lello" id="zona_livraria_lello" placeholder="ex: Rua de Cedofeita" >
+                        </section>
+                        <br>
+                        <br>
+                        <br>
+                        <section>
+                            <label for="comentario_uti">O que achou do quizz?</label>
+                            <br>
+                            <textarea id="comentario_uti" name="comentario_uti" rows="4" cols="50" required placeholder="Escreva aqui a sua opinião sobre o quizz"></textarea>
+                        </section>
+                        <br><br><br>
+                        <input type="submit" value="Submit">
                     </fieldset>
                 </fieldset>
             </form>
