@@ -148,8 +148,41 @@
                         Pode ser apenas referido o atributo, e.g., [target].
                     </td>
                 </tr>
+            </table>
+            <br>
+            <br>
 
-
+            <table class="tabela">
+                <tr>
+                    <th>Combinadores de seletores</th>
+                    <th>Foi usado?</th>
+                    <th>Se usado, onde?</th>
+                </tr>
+                <tr>
+                    <td>div p</td>
+                    <td>❌</td>
+                    <td>Todos os p que estão “dentro” de um div.</td>
+                </tr>
+                <tr>
+                    <td>div > p</td>
+                    <td>❌</td>
+                    <td>Todos os p que estão “logo dentro” de div.</td>
+                </tr>
+                <tr>
+                    <td>div ~ p</td>
+                    <td>❌</td>
+                    <td>Todos os p que estão colocados depois de um div.</td>
+                </tr>
+                <tr>
+                    <td>div + p</td>
+                    <td>❌</td>
+                    <td>Todos os p que estão colocados “imediatamente” depois de um div.</td>
+                </tr>
+                <tr>
+                   <td>div,p{ color: red; }</td>
+                    <td>❌</td>
+                    <td>Os div e p ficacarão com fonte vermelha.</td>
+                </tr>
             </table>
         </section>
     </main>
