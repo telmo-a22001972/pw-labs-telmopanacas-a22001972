@@ -1,1 +1,23 @@
+* {font-family: 'Playfair Display', serif;}
+* {font-family: 'Raleway', sans-serif;}
 
+
+.tabela:hover {
+    background-color: greenyellow; /* darkcyan */
+}
+
+h1 {
+    color: lightblue;
+}
+
+a[target=_blank] {
+    background-color: aqua;
+}
+
+section:hover{
+    background-color: lightgoldenrodyellow;
+}
+
+p::first-letter {
+    font-size: .2em;
+}
