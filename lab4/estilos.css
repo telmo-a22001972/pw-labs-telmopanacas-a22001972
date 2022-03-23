@@ -84,16 +84,25 @@
     background-color: rgb(238, 248, 248);
     flex-wrap: wrap;
     padding: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.dicas_container  div {
+.dicas_container div {
     display: flex;
     background-color: lightgray;
     width: 200px;
     height: 100px;
     margin: 5px;
-
+    justify-content: center;
 
 }
+
+.titulo_dica  {
+    width: auto;
+    height: 20px;
+
+}
+
 
