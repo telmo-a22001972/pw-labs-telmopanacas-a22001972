@@ -49,19 +49,51 @@
     display: flex;
 }
 
-.menu:hover {
+.menu a:hover {
     background-color: lightgray;
     font-weight: bold;
+    border-radius: 15px;
 }
-.menu > nav > a:last-child {
+
+.menu a:last-child {
     margin-left: auto;
 }
 
-.menu > nav > a {
+.menu a {
     font-family: 'Playfair Display', serif;
     padding: 20px;
     text-decoration: none;
     color: black;
+
+}
+
+.cabeçalho {
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 55px;
+    padding-top: 50px;
+}
+
+.cabeçalho div {
+    display: flex;
+}
+
+.dicas_container {
+    display: flex;
+    background-color: rgb(238, 248, 248);
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+
+.dicas_container  div {
+    display: flex;
+    background-color: lightgray;
+    width: 200px;
+    height: 100px;
+    margin: 5px;
+
 
 }
 
