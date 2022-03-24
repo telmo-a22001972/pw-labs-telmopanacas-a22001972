@@ -82,27 +82,29 @@
 .dicas_container {
     display: flex;
     background-color: rgb(238, 248, 248);
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
+}
+
+.card {
+    background: white;
+    width: 270px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #888888;
+
+}
+.card h3 {
+    padding: 10px;
+    text-align: center;
+
+}
+.card p {
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 
-.dicas_container div {
-    display: flex;
-    background-color: lightgray;
-    width: 200px;
-    height: 100px;
-    margin: 5px;
-    justify-content: center;
-
-}
-
-.titulo_dica  {
-    width: auto;
-    height: 20px;
-
-}
 
 
