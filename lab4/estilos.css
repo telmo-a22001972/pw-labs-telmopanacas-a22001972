@@ -105,6 +105,47 @@
 
 }
 
+.dicas_grid {
+    display: grid;
+    background-color: rgb(238, 248, 248);
+    grid-template-areas:
+        'quadrado1 quadrado2 quadrado3 quadrado_direita'
+        'retangulo1 retangulo1 quadrado4 quadrado_direita';
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: 200px 200px;
+    padding-top: 30px;
+
+}
+.dicas_grid > div {
+    font-family: 'Open Sans', sans-serif;
+    background: white;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px #888888;
+
+}
+.quadrado1 {
+    grid-area: quadrado1;
+    /*height: 200px;*/
+}
+.quadrado2 {
+    grid-area: quadrado2;
+}
+.quadrado3 {
+    grid-area: quadrado3;
+}
+.quadrado4 {
+    grid-area: quadrado4;
+}
+.retangulo1 {
+    grid-area: retangulo1;
+}
+.quadrado_direita {
+    grid-area: quadrado_direita;
+}
+
+
+
 
 
 
