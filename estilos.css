@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
+
+* {
+    margin: 0;
+}
+.titulo {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.container {
+
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        'lab1 lab2 lab3'
+        'lab4 lab5 upcoming';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+}
+
+.grid > div {
+    margin: 10px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom right, #c0d890, #78a890);
+
+}
+
+.num_lab {
+
+    font-family: 'Ubuntu', sans-serif;
+
+    padding-top: 20px;
+    text-align: center;
+}
+
+.titulo_lab {
+
+    font-family: 'Hind Siliguri', sans-serif;
+    margin: 10px;
+    padding-top: 20px;
+}
+
+.semana {
+
+    margin: 10px;
+
+}
+
+.botao_lab {
+    background-color: white;
+    position: relative;
+    color: black;
+    left: 140px;
+    padding: 15px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.botao_lab:hover, .botao_lab:active {
+    background-color: white;
+}
+
+.lab1 {
+    grid-area: lab1;
+
+}
+.lab2 {
+    grid-area: lab2;
+
+
+}
+.lab3 {
+    grid-area: lab3;
+
+
+}
+.lab4 {
+    grid-area: lab4;
+
+}
+.lab5 {
+    grid-area: lab5;
+
+}
+
+
+
+.upcoming {
+    grid-area: upcoming;
+    text-align: center;
+    background-color: lightgray;
+}
+.upcoming_text{
+    padding-top: 70px;
+}

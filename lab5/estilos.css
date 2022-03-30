@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {box-sizing: border-box}
+* {font-family: 'Open Sans', sans-serif;}
+* {font-family: 'Playfair Display', serif;}
+* {font-family: 'Raleway', sans-serif;
+margin: 0}
+
+.nomecidade {
+    font-family: 'Playfair Display', serif;
+}
+
+
+.capitais {
+    display: flex;
+    background-color: rgb(238, 248, 248);
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.capitais > div {
+    /* este selector identifica todos os elementos div "filhos" do elemento com classe capitais */
+
+    display: flex;
+    border-radius:20px;
+    justify-content: space-around;
+    box-shadow: 5px 5px 15px #888888;
+    margin: 10px;
+
+}
+
+.capitais img {
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    display: inline-block;
+    flex-flow: row wrap;
+}
+
+.capitais div div:last-child {
+
+    width: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    display: inline-block;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+
+.menu a:hover {
+    background-color: lightgray;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.menu a:last-child {
+    margin-left: auto;
+}
+
+.menu a {
+    font-family: 'Playfair Display', serif;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.cabeçalho {
+    background-image: url("images/teste_cabecalho3.png");
+    display: flex;
+    background-size: cover;
+    height: 90vh;
+    justify-content: center;
+    padding-bottom: 55px;
+    padding-top: 50px;
+}
+.titulo_cabecalho {
+    color: white;
+    padding-top: 50px;
+}
+
+.cabeçalho div {
+    display: flex;
+}
+.flexbox {
+    background-color: rgb(238, 248, 248);
+    padding-top: 60px;
+}
+.header2 {
+    margin: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.dicas_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 270px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #888888;
+
+}
+.card h3 {
+    padding: 10px;
+    text-align: center;
+
+}
+.card p {
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.grid {
+    background-color: rgb(238, 248, 248);
+    padding-top: 50px;
+}
+.dicas_grid {
+    display: grid;
+    grid-template-areas:
+        'quadrado1 quadrado2 quadrado3 quadrado_direita'
+        'retangulo1 retangulo1 quadrado4 quadrado_direita';
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: 200px 200px;
+    padding-top: 30px;
+}
+.dicas_grid > div {
+
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px #888888;
+
+}
+.titulo_grid {
+    margin: 10px;
+    text-align: center;
+}
+.quadrado1 {
+    grid-area: quadrado1;
+    background-image: url("images/oceanario.png");
+    height: 180px;
+    background-size: cover;
+    border-radius: 5px;
+
+}
+.quadrado2 {
+    grid-area: quadrado2;
+    background-image: url("images/palacio_da_bolsa.png");
+    height: 180px;
+    background-size: cover;
+    border-radius: 5px;
+}
+.quadrado3 {
+    grid-area: quadrado3;
+    background-image: url("images/vilamoura.png");
+    height: 180px;
+    background-size: cover;
+    border-radius: 5px;
+}
+.quadrado4 {
+    grid-area: quadrado4;
+    background-image: url("images/sintra.png");
+    height: 180px;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.retangulo1 {
+    grid-area: retangulo1;
+    background-image: url("images/madeira.png");
+    height: 180px;
+    background-size: cover;
+    border-radius: 5px;
+}
+.quadrado_direita {
+    grid-area: quadrado_direita;
+    background-image: url("images/img.png");
+    background-size: cover;
+    border-radius: 5px;
+}
+
+
+
+.tipo_destino {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    color: white;
+    font-size: 15px;
+    top: 5px; left: 10px;
+}
+
+.nome_destino {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    color: white;
+    top: 100px; left: 10px;
+    font-size: 25px;
+}
+
+.info {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    color: white;
+    top: 102px; left: 10px;
+}
+
+.nome_destino_qd {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    color: white;
+    top: 270px; left: 10px;
+    font-size: 25px;
+}
+
+.info_qd {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    color: white;
+    top: 270px; left: 10px;
+}
+
+.butao_qd {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    bottom: 50px; left: 330px;
+    background-color: lightgray;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
